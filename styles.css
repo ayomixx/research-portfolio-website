@@ -200,10 +200,10 @@
         cursor: pointer;
     }
     #menu-toggle{
-        display: none;
+        display: flex;
     }
     .hamburger{
-        display: none;
+        display: flex;
         flex-direction: column;
         cursor: pointer;
     }
@@ -221,7 +221,7 @@
         display: flex;
     }
     .menu{
-        display: none;
+        display: flex;
         flex-direction: column;
         background-color: #03216b;
         position: absolute;
