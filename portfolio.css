@@ -247,7 +247,7 @@
         cursor: pointer;
     }
     #menu-toggle{
-        display: flex;
+        display: none;
     }
     .hamburger{
         display: flex;
