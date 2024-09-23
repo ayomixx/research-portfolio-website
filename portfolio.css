@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "SUSE", sans-serif
+}
+.container{
+    background-color: #f5f5f5;
+    /* padding: 20px; */
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 150px; */
+    background-color: #03216b;
+    color: white;
+    padding: 10px 40px;
+    /* margin: 20px 40px; */
+    /* border-radius: 10px; */
+}
+.name{
+    display: flex;
+    align-items: center;
+}
+.name h2:hover{
+    color: #295f98;
+    cursor: pointer;
+}
+#menu-toggle{
+    display: none;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    /* margin: auto; */
+    gap: 50px;
+}
+.menu a{ 
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.menu a:hover{
+    border-radius: 10px;
+    transform: translateY(-5px);
+    text-decoration: underline;
+}
+
+.hero-section-container{
+    color: #222;
+    margin-top: 80px;
+    padding: 40px 20px;
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    /* align-items: center; */
+    font-size: 20px;
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+}
+.research{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.research-works{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.research-works img{
+    width: 20px;
+}
+.works{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.work p{
+    width: 50%;
+}
+.knowmore{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.roles{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.role-container{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.role-container img{
+    width: 50px;
+}
+#milestone{
+    width: 80px;
+}
+#more{
+    width: 15%;
+    background-color: #03216b;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    /* margin-top: 20px; */
+}
+#info{
+    width: 15%;
+    background-color: #03216b;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+#link{
+    text-decoration: none;
+}
+#rightarrow{
+    width: 15%;
+}
+.patent{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#patent{
+    width: 50%;
+}
+  
+#theme{
+    margin-top: 20px;
+    width: 400px;
+}
+.inaugural p{
+    width: 400px;
+}
+#read{
+    background-color: #03216b;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+} 
+.images{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.images p{
+    font-weight: 700;
+    margin: auto;
+    font-size: 20px;
+    width: 400px;
+}
+  .footer{
+    background-color: #03216b;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 40px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.all-rights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#facebook{
+    width:30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#google-scholar{
+    width:30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+#xicon{
+    width:30px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px;
+}
+@media screen and (max-width: 500px) {
+    .container{
+        background-color: whitesmoke;
+        /* padding: 10px; */
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* gap: 150px; */
+        background-color: #03216b;
+        color: white;
+        padding: 10px;
+    }
+    .name{
+        display: flex;
+        align-items: center;
+    }
+    .name h2{
+        font-size: 16px;
+    }
+    .name h2:hover{
+        color: #295f98;
+        cursor: pointer;
+    }
+    #menu-toggle{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .hamburger div{
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        margin: 5px 0;
+        /* transition: 0.3s ease; */
+    }
+    #menu-toggle:checked + .hamburger + .menu{
+        display: flex;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        background-color: #03216b;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        margin-left: 415px;
+        width: 15%;
+        align-items: center;
+        /* margin: auto; */
+        gap: 10px;
+    }
+    .menu a{ 
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .menu a:hover{
+       /* background-color:#fff;
+       color: #222;
+       border-radius: 10px; */
+       border-radius: 10px;
+       transform: translateY(-5px);
+       text-decoration: underline;
+    }
+    .hero-section-container{
+        /* background-color: #222; */
+        color: #222;
+        margin-top: 60px;
+        padding: 10px;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        gap: 60px;
+        width: 80%;
+    }
+    .research{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .research-works{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .research-works img{
+        width: 15px;
+    }
+    .research-works h3{
+        font-size: 20px;
+    }
+    .works{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .work{
+        display: flex;
+        gap: 15px;
+    }
+    .work li{
+        width: 100%;
+        font-size: 16px;
+    }
+    .knowmore{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .knowmore p{
+        font-size: 16px;
+    }
+    .roles{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .role-container{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .role-container h3{
+        font-size: 18px;
+    }
+    .role-container img{
+        width: 30px;
+    }
+    #fellow{
+        padding: 0px 20px;
+        font-size: 16px;
+    }
+    #milestone{
+        width: 80px;
+    }
+    #more{
+        width: 120px;
+        background-color: #03216b;
+        font-size: 14px;
+        color: white;
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        /* margin-top: 20px; */
+    }
+    #info{
+        width: 135px;
+        background-color: #03216b;
+        font-size: 14px;
+        color: white;
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+    }
+    #link{
+        text-decoration: none;
+    }
+    #rightarrow{
+        width: 20%;
+    }
+    .patent{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0px 20px;
+    }
+    #patent{
+        width: 100%;
+        font-size: 16px;
+        /* padding: 20px; */
+    }
+    #milestone{
+        width: 50px;
+    }
+    .footer{
+        background-color: #03216b;
+        color: white;
+        margin-top: 10px;
+        padding: 10px;
+        /* border-radius: 10px;    */
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .all-rights{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .all-rights p{
+        font-size: 12px;
+        width: 100%;
+    }
+    .icon-container{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    #facebook{
+        width:20px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    
+    #google-scholar {
+        width:20px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    #xicon{
+        width:20px;
+        background-color: black;
+        border-radius: 20px;
+        padding: 5px;
+    }   
+}

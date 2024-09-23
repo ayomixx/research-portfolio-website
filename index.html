@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="name">
+          <h2>Chris Akinbile</h2>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+        <div class="menu">
+          <a href="index.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="hero-section-container">
+        <div class="hero-section">
+          <div class="introduction">
+            <h1>Hello There!</h1>
+            <p>
+              My name is Christopher Akinbile. I'm a professor of
+              Agricultural Engineering at the Federal University of Technology,
+              Akure.
+            </p>
+            <a href="#moreinfo" id="link">
+              <button id="more">
+                Learn more
+                <img src="Images/arrowicon.svg" id="rightarrow" />
+              </button>
+            </a>
+          </div>
+          <div class="myimage">
+            <img src="Images/profakinbile.jpg" alt="Prof's image" />
+          </div>
+        </div>
+        <div id="moreinfo">
+          <p>
+            I was among the 100 world's best researchers on climate change in a
+            forum founded by Volkswagen Foundation, Germany in November 2010. I
+            also won my institution's (FUTA) Vice-Chancellor's award for remarkable
+            achievement due to my outstanding contribution to the development 
+            of the university in November 2012.
+          </p>
+          <p>
+            I was elected by Moszicque Ezine Magazine based in New Delhi, India
+            as one of the future world young leaders.
+            I am married to Pharm (Mrs) Olukemi Akinbile, who is a pharmacist at 
+            the University's health centre, and our marriage is blessed 
+            with 3 wonderful children.
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="name">
+            <h2>Chris Akinbile</h2>
+          </div>
+          <div class="all-rights">
+            <p>© 2024 Akinbile. All rights reserved</p>
+          </div>
+          <div class="icons">
+            <div class="icon-container">
+            <a href="https://web.facebook.com/christobile/?_rdc=1&_rdr" target="_blank">
+              <img id="facebook" src="Images/facebooklogo.svg" />
+              </a>
+            </a>
+            <a href="https://scholar.google.com.my/citations?user=pg-k6WwAAAAJ&hl=en" target="_blank">
+              <img src="Images/googlescholaricon.svg" id="google-scholar">
+            </a>
+            <a href="https://x.com/chrisakinbile" target="_blank">
+              <img src="Images/twittericon.svg" id="xicon">
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function(){
+        setTimeout(function(){
+          loader.style.display = "none"
+        }, 1500);
+      });
+    </script>
+  </body>
+</html>
