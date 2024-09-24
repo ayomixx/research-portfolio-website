@@ -241,6 +241,7 @@
     }
     .name h2{
         font-size: 16px;
+        margin-left: 10px;
     }
     .name h2:hover{
         color: #295f98;
@@ -265,29 +266,25 @@
         display: flex;
     }
     .menu{
-        display: flex;
+        display: none;
         flex-direction: column;
         background-color: #03216b;
         position: absolute;
         top: 50px;
         left: 0;
-        margin-left: 415px;
-        width: 15%;
-        align-items: center;
-        /* margin: auto; */
-        gap: 10px;
+        width: 100%;
+        align-items: flex-start;
+        gap: 20px;
     }
     .menu a{ 
         color: white;
         text-decoration: none;
         padding: 10px;
-        font-size: 12px;
+        font-size: 14px;
+        margin-left: 10px;
+        text-align: center;
     }
     .menu a:hover{
-       /* background-color:#fff;
-       color: #222;
-       border-radius: 10px; */
-       border-radius: 10px;
        transform: translateY(-5px);
        text-decoration: underline;
     }
@@ -416,7 +413,7 @@
     .footer{
         background-color: #03216b;
         color: white;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         padding: 10px;
         /* border-radius: 10px;    */
     }

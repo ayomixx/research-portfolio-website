@@ -226,6 +226,46 @@ label{
     border: none;
     border-radius: 20px;
 }
+.footer{
+    background-color: #03216b;
+    color: white;
+    padding: 10px 40px;
+    margin-top: 20px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.all-rights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#facebook{
+    width:30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#google-scholar {
+    width:30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+#xicon{
+    width:30px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px;
+}
 @media screen and (max-width: 500px) {
     .container{
         background-color: whitesmoke;
@@ -246,6 +286,7 @@ label{
     }
     .name h2{
         font-size: 16px;
+        margin-left: 10px;
     }
     .name h2:hover{
         color: #295f98;
@@ -270,35 +311,30 @@ label{
         display: flex;
     }
     .menu{
-        display: flex;
+        display: none;
         flex-direction: column;
         background-color: #03216b;
         position: absolute;
         top: 50px;
         left: 0;
-        margin-left: 415px;
-        width: 15%;
-        align-items: center;
-        /* margin: auto; */
-        gap: 10px;
+        width: 100%;
+        align-items: flex-start;
+        gap: 20px;
     }
     .menu a{ 
         color: white;
         text-decoration: none;
         padding: 10px;
-        font-size: 12px;
+        font-size: 14px;
+        margin-left: 10px;
     }
     .menu a:hover{
-       /* background-color:#fff;
-       color: #222;
-       border-radius: 10px; */
-       border-radius: 10px;
        transform: translateY(-5px);
        text-decoration: underline;
     }
     .hero-section-container{
         /* background-color: #222; */
-        margin-top: 120px;
+        margin-top: 90px;
         width: 100%;
         display: flex;
         /* padding: 10px; */
@@ -309,8 +345,8 @@ label{
         border: none;
     }
     .hero-section{
-        width: 92%;
-        padding: 0px 20px;
+        width: 95%;
+        padding: 0px 10px;
     }
     .getintouch-container{
         display: flex;
@@ -450,5 +486,50 @@ label{
         cursor: pointer;
         border: none;
         border-radius: 25px;
-    }      
+    } 
+    .footer{
+        background-color: #03216b;
+        color: white;
+        padding: 10px;
+        margin-top: 25px;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .all-rights{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .all-rights p{
+        font-size: 12px;
+        width: 100%;
+    }
+    .icon-container{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    #facebook{
+        width:20px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    
+    #google-scholar {
+        width:20px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    #xicon{
+        width:20px;
+        background-color: black;
+        border-radius: 20px;
+        padding: 5px;
+    }        
 }
