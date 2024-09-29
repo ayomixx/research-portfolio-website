@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+.container{
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
 
 *{
     margin: 0;
@@ -11,22 +24,28 @@
 .nav-bar{
     display: flex;
     justify-content: space-between;
+    /* gap: 150px; */
     background-color: #03216b;
     color: white;
     padding: 10px 40px;
+    /* margin: 20px; */
+    /* border-radius: 10px; */
 }
 .name{
     display: flex;
     align-items: center;
+    margin-left: 120px;
 }
 .name h2:hover{
-    color: #295f98;
+    /* color: #295f98; */
     cursor: pointer;
 }
 .menu{
     display: flex;
     align-items: center;
-    gap: 50px;
+    margin-right: 180px;
+    /* margin: 0px auto; */
+    gap: 30px;
 }
 #menu-toggle{
     display: none;
@@ -35,11 +54,9 @@
     color: white;
     text-decoration: none;
     padding: 10px;
+    transition: transform 0.3s ease 0s;
 }
 .menu a:hover{
-   /* background-color:#fff;
-   color: #222;
-   border-radius: 10px; */
    border-radius: 10px;
    transform: translateY(-5px);
    text-decoration: underline;
@@ -154,7 +171,7 @@
 } */
 
 
-.name{
+.names{
     display: flex;
     gap: 30px;
 }
@@ -283,14 +300,11 @@ label{
     .name{
         display: flex;
         align-items: center;
+        margin: 0;
     }
     .name h2{
         font-size: 16px;
         margin-left: 10px;
-    }
-    .name h2:hover{
-        color: #295f98;
-        cursor: pointer;
     }
     #menu-toggle{
         display: none;
@@ -301,21 +315,22 @@ label{
         cursor: pointer;
     }
     .hamburger div{
-        width: 30px;
+        width: 20px;
         height: 2px;
         background-color: white;
-        margin: 5px 0;
+        margin: 3px 0;
         /* transition: 0.3s ease; */
     }
     #menu-toggle:checked + .hamburger + .menu{
         display: flex;
+        padding-bottom: 20px;
     }
     .menu{
         display: none;
         flex-direction: column;
         background-color: #03216b;
         position: absolute;
-        top: 50px;
+        top: 40px;
         left: 0;
         width: 100%;
         align-items: flex-start;
@@ -334,7 +349,7 @@ label{
     }
     .hero-section-container{
         /* background-color: #222; */
-        margin-top: 90px;
+        margin-top: 60px;
         width: 100%;
         display: flex;
         /* padding: 10px; */
@@ -353,7 +368,7 @@ label{
         flex-direction: column;
         background-color: #03216b;
         color: white;
-        /* width: 100%; */
+        width: unset;
         border-radius: 15px;
         padding: 20px;
         height: 300px;
@@ -481,11 +496,11 @@ label{
         background-color: #03216b;
         color: white;
         padding: 10px;
-        font-size: 14px;
-        width: 100%;
+        font-size: 16px;
+        width: 40%;
         cursor: pointer;
         border: none;
-        border-radius: 25px;
+        border-radius: 20px;
     } 
     .footer{
         background-color: #03216b;

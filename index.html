@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- <div id="preloader"></div> -->
+    <div id="preloader"></div>
     <div class="container">
       <div class="nav-bar">
         <div class="name">
@@ -34,7 +34,7 @@
               Agricultural Engineering at the Federal University of Technology,
               Akure.
             </p>
-            <a href="#moreinfo" id="link">
+            <a href="#moreinfo-container" id="link">
               <button id="more">
                 Learn more
                 <img src="Images/arrowicon.svg" id="rightarrow" />
@@ -45,35 +45,39 @@
             <img src="Images/profakinbile.jpg" alt="Prof's image" />
           </div>
         </div>
-        <div id="moreinfo">
-          <p>
-            I was among the 100 world's best researchers on climate change in a
-            forum founded by Volkswagen Foundation, Germany in November 2010. I
-            also won my institution's (FUTA) Vice-Chancellor's award for remarkable
-            achievement due to my outstanding contribution to the development 
-            of the university in November 2012.
-          </p>
-          <p>
-            I was elected by Moszicque Ezine Magazine based in New Delhi, India
-            as one of the future world young leaders.
-            I am married to Pharm (Mrs) Olukemi Akinbile, who is a pharmacist at 
-            the University's health centre, and our marriage is blessed 
-            with 3 wonderful children.
-          </p>
+        <div id="moreinfo-container">
+          <div class="degree">
+            <h4>University Education, with dates</h4>
+            <ul id="fellow">
+              <li>Undergraduate: The Federal University of Technology, Akure. (1992 - 1999)</li>
+              <li>Postgraduate: University of Ibadan, Oyo state. (2000 - 2001)</li>
+              <li>Postgraduate: University of Ibadan, Oyo state. (2004 - 2009)</li>
+            </ul>
+            <h4 id="qualification">Academic Qualifications</h4>
+            <ul id="fellow">
+              <li>Bachelor of Engineering (B.Eng) degree, <span id="years">January 1999, (Project</span> :Design and Testing of a simple Lysimeter for the tropics) </li>
+              <li>Master of Science (M.Sc) degree, <span id="years">December 2001, (Thesis</span>: Determination of 
+              Consumptive Water Use of Jute Mallow (Corchorus olitorius L.) using Blaney-Morin Simulation Model)</li>
+              <li>Doctor of Philosophy (ph.D) degree, <span id="years"> March 2009, (Thesis</span> : Upland Rice yield Responses to Differential Water Application under Sprinkler Irrigation System).</li>
+            </ul>
+          </div>
+            <div class="moreinfo">
+            <p>
+              I was among the 100 world's best researchers on climate change in a
+              forum founded by Volkswagen Foundation, Germany in November 2010. I
+              also won my institution's (FUTA) Vice-Chancellor's award for remarkable
+              achievement due to my outstanding contribution to the development 
+              of the university in November 2012.
+            </p>
+            <p>
+              I was elected by Moszicque Ezine Magazine based in New Delhi, India
+              as one of the future world young leaders.
+              I am married to Pharm (Mrs) Olukemi Akinbile, who is a pharmacist at 
+              the University's health centre, and our marriage is blessed 
+              with 3 wonderful children.
+            </p>
+            </div>
         </div>
-        <div id="degree">
-          <p>University Education, with dates</p>
-          <ul id="fellow">
-            <li>Undergraduate: The Federal University of Technology, Akure. (1992 - 1999)</li>
-            <li>Postgraduate: University of Ibadan, Oyo state. (2000 - 2001)</li>
-            <li>Postgraduate: University of Ibadan, Oyo state. (2004 - 2009)</li>
-          </ul>
-          <p id="qualification">Academic Qualifications</p>
-          <ul id="fellow">
-            <li>Bachelor of Engineering (B.Eng) degree.</li>
-            <li>Master of Science (M.Sc) degree.</li>
-            <li>Doctor of Philosophy (ph.D) degree.</li>
-          </ul>
         </div>
       </div>
       <div class="footer">
@@ -101,5 +105,21 @@
         </div>
       </div>
     </div>
+    <script>
+      // Get the loading overlay element
+const preloader = document.getElementById('preloader');
+
+// Set a timeout to hide the loading overlay after a certain time (e.g., 5 seconds)
+setTimeout(() => {
+  preloader.style.display = 'none';
+}, 5000); // adjust the time as needed
+
+// Add an event listener to the YouTube iframe to detect when the video is ready
+const iframe = document.querySelector('iframe[src*="<iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c?si=0sHuMLxVzFkTb-r_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"]');
+iframe.addEventListener('load', () => {
+  // When the video is ready, hide the loading overlay
+  preloader.style.display = 'none';
+});
+    </script>
   </body>
 </html>
