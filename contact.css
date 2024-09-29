@@ -436,7 +436,7 @@ label{
         flex-direction: column;
         gap: 30px;
     }
-    .name{
+    .names{
         display: flex;
         flex-direction: column;
         gap: 30px;

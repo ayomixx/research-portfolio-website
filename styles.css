@@ -311,12 +311,12 @@
         font-size: 20px;
     }
     #more{
-        width: 40%;
+        width: 150px;
         background-color: #03216b;
         font-size: 16px;
         color: white;
         display: flex;
-        gap: 8px;
+        gap: 10px;
         justify-content: center;
         align-items: center;
         cursor: pointer;
@@ -328,7 +328,7 @@
         text-decoration: none;
     }
     #rightarrow{
-        width: 15%;
+        width: 18%;
     }
     .myimage{
         width: 60%;
@@ -341,13 +341,18 @@
         width: 90%;
         border-radius: 10px;
     }
-    #moreinfo{
-        margin-top: 40px;
+    #moreinfo-container{
+        display: flex;
+        flex-direction: column;
+        background-color: #03216b;
+        color: white;
+        gap: 40px;
+        width: 90%;
+        margin: 0;
         padding: 20px;
         background-color: #03216b;
         color: white;
-        position: relative;
-        margin-bottom: 0;
+        border-radius: 25px;
     }
     #moreinfo p{
         /* line-height: 1.5; */
