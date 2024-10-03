@@ -5,10 +5,11 @@
     font-family: "SUSE", sans-serif;
 }
 #preloader{
-    background-image: url(Images/Simple\ Loader.gif);
+    background-image:  url(Images/Simple\ Loader.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-color: #03216b;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -58,15 +59,10 @@
    transform: translateY(-5px);
    text-decoration: underline;
 }
-/* .moreinfo{
-    display: flex;
-    gap: 20px;
-} */
-
 .hero-section-container{
     color: #222;
     margin-top: 80px;
-    padding: 40px 20px; 
+    padding: 0px 20px; 
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -75,7 +71,7 @@
     display: flex;
     padding: 10px;
     margin: auto;
-    gap: 80px;
+    gap: 100px;
     width: 80%;
 }
 .introduction{
@@ -90,7 +86,7 @@
     font-size: 20px;
 }
 #more{
-    width: 35%;
+    width: 28%;
     background-color: #03216b;
     font-size: 16px;
     color: white;
@@ -128,7 +124,7 @@
     gap: 40px;
     width: 80%;
     margin: auto;
-    padding: 40px;
+    padding: 80px;
     background-color: #03216b;
     color: white;
     border-radius: 25px;
@@ -139,7 +135,39 @@
     font-size: 18px;
     padding-bottom: 30px;
 }
-
+.degree{
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    align-items: center;
+    background-color:whitesmoke;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    gap: 150px;
+    padding: 40px;
+}
+.prof{
+    margin: auto;
+}
+.prof img{
+    width: 250px;
+}
+.information{
+    display: flex;
+    align-items: center;
+    background-color:#03346e;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    gap: 150px;
+    padding: 40px;
+}
+.professor img{
+    width: 350px;
+}
 .degree h4{
     font-weight: 600;
     font-size: 18px;
@@ -150,15 +178,19 @@
     font-size: 18px;
     padding-bottom: 15px;
 }
+.degree img{
+    width: 20%;
+}
 #qualification{
     padding-top: 20px;
 }
-#fellow{
-    padding: 0px 10px;
-}
+
 #fellow li{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
+}
+.information p{
+    font-size: 16px;
 }
 #years{
     font-weight: 700;
@@ -167,7 +199,7 @@
     background-color: #03216b;
     color: white;
     padding: 10px 40px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .footer-container{
     display: flex;
@@ -215,15 +247,13 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 0;
-        /* min-height: 100vh; */
-        /* padding: 5px; */
     }
     .nav-bar{
-        display: flex;
-        justify-content: space-between;
-        background-color: #03216b;
-        color: white;
-        padding: 10px;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: unset;
     }
     .name{
         display: flex;
@@ -233,10 +263,6 @@
     .name h2{
         font-size: 16px;
         margin-left: 10px;
-    }
-    .name h2:hover{
-        color: #295f98;
-        cursor: pointer;
     }
     #menu-toggle{
         display: none;
@@ -261,6 +287,8 @@
         flex-direction: column;
         background-color: #03216b;
         position: absolute;
+        margin-top: 20px;
+        padding-left: 10px;
         top: 40px;
         gap: 20px;
         left: 0;
@@ -288,17 +316,17 @@
     }
     .hero-section{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 0;
         margin: auto;
         gap: 40px;
-        width: 100%;
+        width: unset;
     }
     .introduction{
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 80%;
+        width: unset;
     }
     .introduction h1{
         font-size: 30px;
@@ -331,56 +359,44 @@
         width: 18%;
     }
     .myimage{
-        width: 60%;
+        width: 80%;
         display: flex;
         margin: 0;
         align-items: center;
         justify-content: center;
     }
     .myimage img{
-        width: 90%;
+        width: 100%;
         border-radius: 10px;
     }
+    
     #moreinfo-container{
-        display: flex;
-        flex-direction: column;
-        background-color: #03216b;
-        color: white;
         gap: 40px;
-        width: 90%;
-        margin: 0;
-        padding: 20px;
-        background-color: #03216b;
-        color: white;
-        border-radius: 25px;
+        width: unset;
+        margin: 0px 20px;
+        padding: 30px;
     }
-    #moreinfo p{
-        /* line-height: 1.5; */
-        font-size: 16px;
-        padding-bottom: 10px;
+    .info{
+        flex-direction: column;
+        gap: 60px;
     }
-    #degree{
-        margin-top: 40px;
-        /* padding: 20px; */
-        background-color: #03216b;
-        color: white;
-        position: relative;
-        margin-bottom: 0;
+    
+    .information{
+        flex-direction: column;
+        gap: 60px;
     }
-    #degree p{
-        line-height: 1.5;
-        font-weight: 600;
-        font-size: 18px;
-        padding-bottom: 10px;
+    .professor img{
+        width: 250px;
+    }
+    .degree h4{
+       font-size: 25px;
     }
     #qualification{
         padding-top: 20px;
         font-size: 18px;
     }
-    #fellow{
-        padding: 0px 10px;
-        font-size: 16px;
-        width: 100%;
+    #fellow li{
+        font-size: 18px;
     }
     .footer{
         background-color: #03216b;
@@ -392,6 +408,15 @@
         justify-content: space-between;
         align-items: center;
 
+    }
+    .name{
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+    .name h2{
+        font-size: 16px;
+        width: 100%;
     }
     .all-rights{
         display: flex;
