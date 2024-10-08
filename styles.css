@@ -153,7 +153,7 @@
     margin: auto;
 }
 .prof img{
-    width: 250px;
+    width: 350px;
 }
 .information{
     display: flex;
@@ -373,12 +373,15 @@
     #moreinfo-container{
         gap: 40px;
         width: unset;
-        margin: 0px 20px;
+        margin: 0px 10px;
         padding: 30px;
     }
     .info{
         flex-direction: column;
         gap: 60px;
+    }
+    .prof img{
+        width: 80%;
     }
     
     .information{
@@ -386,7 +389,7 @@
         gap: 60px;
     }
     .professor img{
-        width: 250px;
+        width: 80%;
     }
     .degree h4{
        font-size: 25px;
